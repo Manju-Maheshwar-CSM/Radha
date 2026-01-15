@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Output</title>
+</head>
+<body>
+
+    <h2>Result</h2>
+    <p id="vote"></p>
+    <p id="grader"></p>
+
+  
+
+<script>
+
+   
+
+
+    let score = prompt("Enter your age=","");
+    if(score >= 18)
+    {
+        document.getElementById("vote").innerHTML="You are eligible to vote <br>"
+        
+    }
+    else{
+        document.getElementById("vote").innerHTML="You are not eligible to vote <br>"
+        
+    }
+    
+    let grade = Number(prompt("Enter your grade:"));
+    let result = "";
+
+    switch (true) {
+        case grade >= 95:
+            result = "you got A++ grade";
+            
+            break;
+
+        case grade >= 90:
+            result = "you got A+ grade";
+            break;
+
+        case grade >= 85:
+            result = "you got A grade";
+            break;
+
+        case grade >= 80:
+            result = "you got B++ grade";
+            break;
+
+        case grade >= 75:
+            result = "you got B+ grade";
+            break;
+
+        case grade >= 70:
+            result = "you got B grade";
+            break;
+
+        case grade >= 65:
+            result = "you got C++ grade";
+            break;
+
+        case grade >= 60:
+            result = "you got C+ grade";
+            break;
+
+        case grade >= 55:
+            result = "you got C grade";
+            break;
+
+        case grade >= 50:
+            result = "you got D grade";
+            break;
+
+        case grade >= 0:
+            result = "you failed";
+            break;
+
+        default:
+            result = "Invalid marks";
+
+    }
+document.write(result)
+
+
+
+// Call function when page loads
+
+
+
+
+
+
+    </script>
+</body>
+</html>
